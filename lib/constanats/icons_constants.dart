@@ -26,4 +26,8 @@ class IconsConstants {
   static const nootes = 'assets/icons/notes.svg';
   static const tamsirCrown = 'assets/icons/tamisr_crown.svg';
   static const calenderClock = 'assets/icons/calendar_clock.svg';
+  static const ahmed = 'assets/icons/ahmed.svg';
+  static const saad = 'assets/icons/saad.svg';
+  static const building = 'assets/icons/building.svg';
+  static const ship = 'assets/icons/ship.svg';
 }

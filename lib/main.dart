@@ -4,7 +4,6 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:tamsir_admin/views/pages/splash_screen.dart';
 
 void main() => runApp(const TamsirAdmin());
-
 class TamsirAdmin extends StatelessWidget {
   const TamsirAdmin({super.key});
 
