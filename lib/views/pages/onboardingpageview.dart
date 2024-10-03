@@ -64,7 +64,7 @@ class _OnboardingPageViewState extends State<OnboardingPageView> {
           CommonUseButton(
             height: 48.h,
             width: 327.w,
-            text: 'Next',
+            text: 'onboarding_button'.tr,
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,
             textColor: ColorConstants.whiteColor,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tamsir_admin/constanats/color_constants.dart';
 import 'package:tamsir_admin/constanats/icons_constants.dart';
@@ -17,7 +18,7 @@ class StoreAbout extends StatelessWidget {
           children: [
             Align(
               alignment: Alignment.centerLeft,
-              child: Text('Store Name',
+              child: Text('about_store_name'.tr,
               style: GoogleFonts.inter(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500
@@ -25,7 +26,7 @@ class StoreAbout extends StatelessWidget {
             ),
             SizedBox(height: 4.sp),
             CommonUseTfield(
-            hintText: 'Enter Your Store Name',
+            hintText: 'enter_about_name'.tr,
             suffixicon:  Padding(
             padding:  EdgeInsets.all(10.sp),
             child: SvgPicture.asset('assets/icons/edit.svg',),
@@ -34,13 +35,13 @@ class StoreAbout extends StatelessWidget {
           SizedBox(height: 20.h),
           Align(
               alignment: Alignment.centerLeft,
-              child: Text('About this store',
+              child: Text('about_store'.tr,
               style: GoogleFonts.inter(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500
               ))),
             CommonUseTfield(
-            hintText: 'Golend gate is provider water',
+            hintText: 'about_store_data'.tr,
             maxlines: 3,
             suffixicon:   Padding(
             padding:  EdgeInsets.all(10.sp),
@@ -49,7 +50,7 @@ class StoreAbout extends StatelessWidget {
             SizedBox(height: 10.h),
             Align(
               alignment: Alignment.centerLeft,
-              child: Text('Business Hours',
+              child: Text('business_hours'.tr,
               style: GoogleFonts.inter(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500
@@ -186,7 +187,7 @@ class StoreAbout extends StatelessWidget {
             SizedBox(height: 14.h),
              Align(
               alignment: Alignment.centerLeft,
-              child: Text('Photo',
+              child: Text('about_photo'.tr,
               style: GoogleFonts.inter(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500
@@ -220,13 +221,13 @@ class StoreAbout extends StatelessWidget {
             SizedBox(height:14.h),
              Align(
               alignment: Alignment.centerLeft,
-              child: Text('Company Information',
+              child: Text('about_company'.tr,
               style: GoogleFonts.inter(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500
               ))),  
             CommonUseTfield(
-              hintText: 'Enter Company Info....',
+              hintText: 'about_company_info'.tr,
               maxlines: 4,
               suffixicon: Padding(
                 padding:  EdgeInsets.all(10.sp),
@@ -235,7 +236,7 @@ class StoreAbout extends StatelessWidget {
              SizedBox(height:14.h),
              Align(
               alignment: Alignment.centerLeft,
-              child: Text('Contact Us',
+              child: Text('about_contact'.tr,
               style: GoogleFonts.inter(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500
@@ -268,6 +269,7 @@ class StoreAbout extends StatelessWidget {
                   Row(
                     children: [
                       SvgPicture.asset(IconsConstants.location),
+                      SizedBox(width: 10.w),
                       Text('Search for Area, Street Name',
                       style: GoogleFonts.inter(
                         fontSize: 13.sp,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:tamsir_admin/constanats/color_constants.dart';
 import 'package:tamsir_admin/views/booking_pending.dart';
 import 'package:tamsir_admin/views/pages/onboarding_screen.dart';
@@ -19,7 +20,7 @@ class BookingProgress extends StatelessWidget {
         firstButton: CommonUseButton(
           height: 52.h,
           width: 370.w,
-          text: 'Chat',
+          text: 'chat_button'.tr,
           fontSize: 21.sp,
           fontWeight: FontWeight.w500,
           textColor: ColorConstants.whiteColor,
@@ -30,7 +31,7 @@ class BookingProgress extends StatelessWidget {
          secondButton: CommonUseButton(
           height: 52.h,
           width: 370.w,
-          text: 'Done',
+          text: 'done_button'.tr,
           fontSize: 21.sp,
           fontWeight: FontWeight.w500,
           textColor: ColorConstants.whiteColor,

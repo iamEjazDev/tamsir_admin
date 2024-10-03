@@ -26,6 +26,18 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Image.asset('assets/images/splash_screen.png',height: 48.h,width: 62.w,),
+                        ElevatedButton(
+            onPressed: () {
+              Get.updateLocale(const Locale("en", "US"));
+            },
+            child: const Text('English'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.updateLocale(const Locale("ur", "PK"));
+            },
+            child: const Text('Urdu'),
+          ),
                   GestureDetector(
                     onTap: () {
                       Get.to( NotificationScreen());
@@ -59,23 +71,25 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.zero,
                     children: [
                       Obx(() => buildGridItem(
-                          "Orders", "assets/icons/note-text.svg", controller.orders.string)),
+                          "home_order".tr, "assets/icons/note-text.svg", controller.orders.string)),
                       Obx(() => buildGridItem(
-                          "Services", "assets/icons/note-text.svg", controller.services.string)),
+                          "home_service".tr, "assets/icons/note-text.svg", controller.services.string)),
                       Obx(() => buildGridItem(
-                          "Products", "assets/icons/note-text.svg", controller.products.string)),
+                          "home_products".tr, "assets/icons/note-text.svg", controller.products.string)),
                       Obx(() => buildGridItem(
-                          "Income", "assets/icons/shop.svg", "${controller.income}")),
+                          "home_income".tr, "assets/icons/shop.svg", "${controller.income}")),
                       Obx(() => buildGridItem(
-                        "Evaluation", "assets/icons/medal-star.svg",controller.evaluation.string)),
+                        "home_evaluation".tr, "assets/icons/medal-star.svg",controller.evaluation.string)),
                       Obx(() => buildGridItem(
-                          "My Store", "assets/icons/shop.svg", controller.myStore.string)),
+                          "home_mystore".tr, "assets/icons/shop.svg", controller.myStore.string)),
                     ],
                   ),
                 ),
-                ],
-              ),
-            ),
+               
+                
+                  ],
+                ),
+            )
           )
           ],
         ),

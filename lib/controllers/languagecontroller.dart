@@ -6,4 +6,6 @@ class LanguageController extends GetxController {
   void toggleLanguage() {
     isEnglish.value = !isEnglish.value; 
   }
+
+  void changeLanguage(String s) {}
 }

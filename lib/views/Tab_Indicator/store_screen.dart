@@ -31,7 +31,7 @@ class StoreScreen extends StatelessWidget {
                   backgroundColor: const Color(0xffF8F8F8),
                   child: SvgPicture.asset(IconsConstants.arrowLeft),
                 ),
-                Text('My Store',
+                Text('my_store'.tr,
                     style: GoogleFonts.inter(
                         fontSize: 29.sp, fontWeight: FontWeight.w600)),
                 const SizedBox(width: 20),
@@ -67,7 +67,7 @@ class StoreScreen extends StatelessWidget {
               )
             ]),
             SizedBox(height: 16.h),
-            Text('Store Name',
+            Text('store_name'.tr,
                 style: GoogleFonts.inter(
                     fontSize: 20.sp, fontWeight: FontWeight.w600)),
             Row(
@@ -94,10 +94,10 @@ class StoreScreen extends StatelessWidget {
                 ),
                 unselectedLabelColor: ColorConstants.orangeColor,
                 labelColor: Colors.white,
-                tabs:  const [
-                  CustomTab(text: 'Services'),
-                  CustomTab(text: 'Product'),
-                  CustomTab(text: 'About'),
+                tabs:   [
+                  CustomTab(text: 'tab_service'.tr),
+                  CustomTab(text: 'tab_product'.tr),
+                  CustomTab(text: 'tab_about'.tr),
                 ],
               ),
             ),
@@ -192,7 +192,7 @@ class ServiceCard extends StatelessWidget {
               children: [
                 Padding(
                   padding:  EdgeInsets.symmetric(horizontal: 6.w),
-                  child: Text('Services Name',
+                  child: Text('service_card'.tr,
                   style: GoogleFonts.inter(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.w600

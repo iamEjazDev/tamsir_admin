@@ -38,7 +38,7 @@ class NotificationScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'Notification',
+                  'notification_screen'.tr,
                   style: GoogleFonts.inter(
                     fontSize: 27.sp,
                     fontWeight: FontWeight.w600,

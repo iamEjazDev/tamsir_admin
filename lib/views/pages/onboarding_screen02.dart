@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tamsir_admin/constanats/color_constants.dart';
 import 'package:tamsir_admin/views/pages/onboarding_screen.dart';
@@ -56,7 +57,7 @@ class PageView2 extends StatelessWidget {
         SizedBox(height: 11.h),
         Text(
           textAlign: TextAlign.center,
-          'Book an appointment for your wedding day',
+          'tittle_onboarding2'.tr,
         style: GoogleFonts.inter(
           fontSize: 28.sp,
           fontWeight: FontWeight.w600
@@ -64,7 +65,7 @@ class PageView2 extends StatelessWidget {
         SizedBox(height: 36.h),
         Text(
           textAlign: TextAlign.center,
-          'We make it easy for you to shop for your fashion needs from various brands online through our application without having\n to come directly to the store.',
+          'text_onboarding2'.tr,
         style: GoogleFonts.nunitoSans(
           fontSize: 12.sp,
           fontWeight: FontWeight.w400,

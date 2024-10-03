@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Center(child: Image.asset('assets/images/splash_screen.png',
           height: 168.sp,width: 217.sp,)),
           SizedBox(height: 53.h),
-          Text('Welcome to the stores application',
+          Text('welcome_message'.tr,
           style: GoogleFonts.inter(
             fontSize: 18.sp,
             fontWeight: FontWeight.w600,

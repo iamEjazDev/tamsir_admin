@@ -67,7 +67,7 @@ class CreateAccount extends StatelessWidget {
                ),
               ),
             SizedBox(height: 20.h),
-            Text('Get Started',
+            Text('login_text'.tr,
             style: GoogleFonts.inter(
             fontSize: 25.sp,
             fontWeight: FontWeight.w500
@@ -77,7 +77,7 @@ class CreateAccount extends StatelessWidget {
             SizedBox(height: 53.h),
             TextFormField(
               decoration: InputDecoration(
-                hintText: 'Phone Number',
+                hintText: 'login_tff'.tr,
                 hintStyle: GoogleFonts.inter(
                   fontSize: 14.sp,
                   fontWeight: FontWeight.w400,
@@ -105,7 +105,7 @@ class CreateAccount extends StatelessWidget {
             TextFormField(
               obscureText: true,
               decoration: InputDecoration(
-                hintText: 'Password',
+                hintText: 'login_tff2'.tr,
                 hintStyle: GoogleFonts.inter(
                   fontSize: 14.sp,
                   fontWeight: FontWeight.w400,
@@ -142,7 +142,7 @@ class CreateAccount extends StatelessWidget {
             CommonUseButton(
               height: 48.h, 
               width: 327.w, 
-              text: 'Log in', 
+              text: 'login_button'.tr, 
               fontSize: 16.sp, 
               fontWeight: FontWeight.w500, 
               textColor: ColorConstants.whiteColor, 

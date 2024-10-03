@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tamsir_admin/constanats/color_constants.dart';
 import 'package:tamsir_admin/constanats/icons_constants.dart';
@@ -21,7 +22,7 @@ class BookingPending extends StatelessWidget {
         firstButton: CommonUseButton(
           height: 61.h,
           width: 370.w,
-          text: 'Confirm order',
+          text: 'pending_button'.tr,
           fontSize: 16.sp,
           fontWeight: FontWeight.w700,
           textColor: ColorConstants.whiteColor,
@@ -70,7 +71,7 @@ class BookingsOrders extends StatelessWidget {
                     child: Icon(Icons.arrow_back,size: 25,),
                   ),
                 ),
-                Text('Orders',
+                Text('order_screen'.tr,
                 style: GoogleFonts.inter(
                   fontSize: 25.sp,
                   fontWeight: FontWeight.w600

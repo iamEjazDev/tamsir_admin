@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
@@ -17,7 +18,7 @@ final List<Widget> _screens = [
           HomeScreen(),
     const StoreScreen(),
     const BookingScreen(),
-    const ChatScreen()
+     ChatScreen()
   ];
 
    Bottomnav({super.key});
@@ -42,7 +43,7 @@ final List<Widget> _screens = [
                 activeIcon: SvgPicture.asset(
                   IconsConstants.home2
                 ),
-                label: 'Home', 
+                label: 'bnb_home'.tr, 
               ),
               BottomNavigationBarItem(
                  icon: SvgPicture.asset(
@@ -51,7 +52,7 @@ final List<Widget> _screens = [
                 activeIcon: SvgPicture.asset(
                   IconsConstants.shop2
                 ),
-                label: 'Stores',
+                label: 'bnb_store'.tr,
               ),
               BottomNavigationBarItem(
                 icon: SvgPicture.asset(
@@ -60,7 +61,7 @@ final List<Widget> _screens = [
                 activeIcon: SvgPicture.asset(
                   IconsConstants.note
                 ),
-                label: 'My Booking',
+                label: 'bnb_mybooking'.tr,
               ),
               BottomNavigationBarItem(
                icon: SvgPicture.asset(
@@ -69,7 +70,7 @@ final List<Widget> _screens = [
                 activeIcon: SvgPicture.asset(
                   IconsConstants.chat2
                 ),
-                label: 'Chat',
+                label: 'bnb_chat'.tr,
               ),
             ],
           )),

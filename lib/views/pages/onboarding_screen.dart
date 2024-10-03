@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get_core/get_core.dart';
-import 'package:get/get_instance/get_instance.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tamsir_admin/constanats/color_constants.dart';
 import 'package:tamsir_admin/controllers/onboarding_controller.dart';
@@ -45,7 +44,7 @@ class PageView1 extends StatelessWidget {
         SizedBox(height: 35.h),
         Text(
           textAlign: TextAlign.center,
-          'Choose from a large number of supply stores',
+          'tittle_onboarding1'.tr,
         style: GoogleFonts.inter(
           fontSize: 28.sp,
           fontWeight: FontWeight.w600
@@ -53,7 +52,7 @@ class PageView1 extends StatelessWidget {
         SizedBox(height: 36.h),
         Text(
           textAlign: TextAlign.center,
-          'Online fashion shopping marketplace application ranging from \nclothes, pants, skirts, shoes, sandals, to accessories from \nvarious brands.',
+          'text_onboarding1'.tr,
         style: GoogleFonts.nunitoSans(
           fontSize: 12.sp,
           fontWeight: FontWeight.w400,

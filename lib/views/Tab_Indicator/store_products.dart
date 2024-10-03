@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tamsir_admin/constanats/color_constants.dart';
 import 'package:tamsir_admin/constanats/icons_constants.dart';
@@ -41,7 +42,7 @@ class ProductCard extends StatelessWidget {
           children: [
             Padding(
               padding:  EdgeInsets.symmetric(horizontal: 6.w),
-              child: Text('Product Name',
+              child: Text('product_card'.tr,
               style: GoogleFonts.inter(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.w600
